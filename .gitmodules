@@ -1,0 +1,3 @@
+[submodule "svsm"]
+	path = svsm
+	url = ./svsm
