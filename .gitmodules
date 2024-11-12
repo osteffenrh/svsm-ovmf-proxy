@@ -1,3 +1,6 @@
 [submodule "svsm"]
 	path = svsm
 	url = ./svsm
+[submodule "edk2"]
+	path = edk2
+	url = ./edk2
