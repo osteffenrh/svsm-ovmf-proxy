@@ -1,0 +1,5 @@
+efi-app/target/*
+efi-app/firmware.log
+OVMF.fd
+efi-app.efi
+firmware.log
