@@ -19,11 +19,16 @@ Ensure you have all build dependencies installed for Coconut SVSM and EDK2.
 See the [Coconut SVSM documentation](https://github.com/coconut-svsm/svsm/blob/main/Documentation/docs/installation/INSTALL.md) for that too.
 
 The EFI app uses the uefi-rs crate and the `x86_64-unknown-uefi` target.
-That should get pulled in by cargo automatically.
+```
+dnf install rust-std-static-x86_64-unknown-uefi.x86_64
+```
+or
+```
+rustup target add x86_64-unknown-uefi
+```
 
-Then simply run the build script `./build.sh` and wait.
-
-It will produce
+Then run the build script: `./build.sh`.
+It will produce:
 - `efi-app.efi`: The EFI app to launch when OVMF boots
 - `OVMF.fd`: The OVMF build, including `efi-app.efi`
 - `coconut-qemu.igvm`: Coconut SVSM including the above images
