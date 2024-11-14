@@ -1,6 +1,6 @@
 [submodule "svsm"]
 	path = svsm
-	url = ./svsm
+	url = https://github.com/coconut-svsm/svsm.git
 [submodule "edk2"]
 	path = edk2
-	url = ./edk2
+	url = https://github.com/osteffenrh/edk2.git
