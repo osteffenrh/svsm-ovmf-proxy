@@ -20,6 +20,7 @@ popd
 pushd svsm
 git submodule update --init
 FW_FILE=../OVMF.fd make
+cp bin/coconut-qemu.igvm ..
 popd
 
 #NOTE: AmdSevX64 build pulls in the efi file into the image and launches it on boot.
