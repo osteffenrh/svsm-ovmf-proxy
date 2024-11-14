@@ -37,6 +37,15 @@ Launch the `coconut-qemu.igvm` as usual (see Coconut SVSM documentation for deta
 
 You should see the EFI app start after SVSM has handed over to OVMF.
 
+Currently it only prints Hello World:
+```
+[...]
+SetUefiImageMemoryAttributes - 0x000000007D471000 - 0x0000000000005000 (0x0000000000004008)
+BdsDxe: starting Boot0002 "Grub Bootloader" from Fv(7CB8BDC9-F8EB-4F34-AAEA-3EE4AF6516A1)/FvFile(B5AE312C-BC8A-43B1-9C62-EBB826DD5D07)
+[ INFO]:  src/main.rs@010: Hello world!
+SetUefiImageMemoryAttributes - 0x0000000
+```
+
 ## Testing things
 
 You can launch the OVMF build in a regular (no SNP) VM using the `runner-qemu-x86_64.sh` script:
