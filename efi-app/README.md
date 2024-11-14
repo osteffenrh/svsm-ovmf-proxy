@@ -6,7 +6,15 @@ uefi-rs Book: https://rust-osdev.github.io/uefi-rs/introduction.html
 
 On using std: https://rust-osdev.github.io/uefi-rs/how_to/rust-std.html
 
-build:
+## Building
 ```
 cargo build --target x86_64-unknown-uefi
+```
+
+## Testing
+
+Run the app in Qemu using the system-provided OVMF build:
+
+```
+../run-app.sh target/x86_64-unknown-uefi/debug/efi-app.efi
 ```
