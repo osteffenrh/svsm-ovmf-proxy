@@ -49,8 +49,8 @@ To test the EFI app on its own, use `run-app.sh`:
 - [ ] Implement the attestation proxy inside the EFI app (and possibly rename it ;-)
 - [ ] Add a communication channel between SVSM and the EFI app
 - [ ] Find a way to return to SVSM after the app has finished. SVSM probably needs to clean up
--     page tables etc to allow OVMF to be launched a second time.
+      page tables etc to allow OVMF to be launched a second time.
 - [ ] Find a way to set the BootOrder on the second launch of OVMF in order to jump into the actual guest OS.
       (Maybe fw_cfg or something?)
 - [ ] Maybe we need to avoid that the guest can launch the EFI app (by setting BootNext or launching
--     it directly from Grub for example).
+      it directly from Grub for example).
