@@ -27,6 +27,8 @@ or
 rustup target add x86_64-unknown-uefi
 ```
 
+See also the [Readme for the efi-app](efi-app/README.md).
+
 Then run the build script: `./build.sh`.
 It will produce:
 - `efi-app.efi`: The EFI app to launch when OVMF boots
